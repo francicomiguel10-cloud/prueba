@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="proyetopaquetes.css">
+</head>
+<body>
+    <h1>Seleccion de paquetes de horaria</h1>
+    <nav><a href="./Proyecto.html">Menu principal</a></nav>
+    <p draggable="true">Aqui seleccionaras el paquete de horaria que mas te guste</p>
+    <section>
+        <img src="./fotos/horaria simple.png" alt="">
+        <img src="./fotos/horariahorario.png" alt="">
+        <img src="./fotos/horariaavanzado.png" alt="">
+        <img src="./fotos/horariapremiun.png" alt="">
+        <img src="./fotos/horaria platinum.png" alt="">
+    </section>
+    <p class="muchas">Muchas gracias por elegirnos 😁</p>
+    <div class="popup" onclick="myFunction()">haz click en mi
+        <span class="popuptext" id="myPopup">Cualquier problema no olvides en contactarnos</span>
+      </div>
+      <script>
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+        </script>
+</body>
+</html>
