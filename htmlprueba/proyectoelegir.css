@@ -1,0 +1,54 @@
+body{
+   background-color: azure;
+    }
+.titulo{
+    background-color: rgb(61, 58, 253);
+    text-align: center;
+    margin-top: auto;
+    border-radius: 20px;
+}
+nav{
+    background-color: rgb(127, 150, 255);
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    padding: 1rem;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+}
+header{
+    width: 70%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-top: auto;
+}
+table{
+    caption-side: bottom;
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+td,th{
+    border: 2px solid red;
+    padding: 05rem 1rem 0.5rem 1rem;
+}
+
+h1,td, th{
+    text-align: center;
+    padding: 2rem;
+}
+table tr:first-child{
+    background-image: linear-gradient(to right, blue, rgb(0, 102, 255));
+    color: white;
+}
+.lista{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    text-align: left;
+    display: inline-block;
+}

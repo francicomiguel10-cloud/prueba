@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CZ:wght@100..400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+body{
+    font-size: 1.6rem;
+    height: 100vh;
+    background-color: rgb(203, 240, 252);
+}
+footer{
+  position: absolute;
+  bottom: 0px;
+  height: 10vh;
+}
+header, footer{
+  background: linear-gradient(blue 50%,rgb(0, 110, 255)70%);
+  width: 100%;
+}
+nav{
+    background-color: rgb(52, 87, 245);
+    width: 15rem;
+    height: 5rem;
+    text-align: center;
+    padding: 1.5rem;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+}
+.ani{
+    display: flex;
+    height: 400px;
+    cursor: url(./Cursor/cursor.cur), auto;
+    padding: 2em;
+}
+.ani img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: 2s ease;
+}
+.ani img:hover{
+    width: 99px;
+    opacity: 1;
+    filter: contrast(100%);
+}
+.ani img:first-child{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.ani img:last-child{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+h1{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  cursor: url(./Cursor/cursor\ \(1\).cur), auto;
+}
+.muchas{
+    font-family: "Playwrite CZ", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+p{
+    text-align: center;
+}
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 100%;
+    margin-left: -115px;
+  }
+  
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 1%;
+    margin-left: 60px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  .howto{
+    margin-left: 600px;
+  }
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }

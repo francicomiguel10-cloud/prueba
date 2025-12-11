@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flexbox;
+}
+.imagen{
+    height: 150px;
+    width: auto;
+    padding-left: 350px;
+}
+.titulo{
+    background-color: blue;
+    color: black;
+    font-style: italic;
+    text-align: center;
+    height: 100px;
+    width: auto;
+    padding: 1rem;
+}
+.titulo img{
+    margin-top: 2px;
+    width: 4rem;
+    padding-left: 2px;
+}
+.menuFlex{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto 0 auto left;
+    text-align: center;
+        
+}
+    
+.menuFlex a{
+    text-decoration: none;
+    background-color: rgb(58, 48, 197);
+    color: black;
+    padding: 25px;
+    flex-grow: 1;
+}
+    
+    
+.menuFlex a:hover{
+    background-color: rgb(111, 100, 214);
+}
+body{
+    display: grid;
+}
+section{
+    background-color: antiquewhite;
+    margin: 2.5rem auto;
+    width: 60rem;
+    height: auto;
+    margin-top: 40px;
+    cursor: cell;
+}
+section p{
+    font-size: 20px;
+    text-align: center;
+}
+.lema{
+    font-size: 25px;
+    font-style: italic;
+    margin-top: 1rem;
+}
+footer{
+    background-color: blue;
+    color: black;
+    font-style: italic;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+}
+img{
+    width: 100px;
+}
+@media(width<=576px){
+  .grid{  grid-template-columns: 1fr;}
+  card h3{ font-size: 3rem;}
+}
+@media(width<=768px) and (width>576px){
+    .grid{grid-template-columns: repeat(2.1fr);}
+}
